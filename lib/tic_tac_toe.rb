@@ -163,4 +163,5 @@ end
 
 def play(board)
   turn(board)
+  over?(board) == true ? puts "yes" : puts "no"
 end
