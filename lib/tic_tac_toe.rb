@@ -32,9 +32,9 @@ def input_to_index(input)
 end
 
 # updates the board array with the value of the user's move
-def move(arr, i, char)
-  arr[i] = char
-  arr
+def move(board, i, char)
+  board[i] = char
+  board
 end
 
 # checks if the chosen position on the board is occupied
