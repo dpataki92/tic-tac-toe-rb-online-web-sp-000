@@ -32,7 +32,7 @@ def input_to_index(input)
 end
 
 # updates the board array with the value of the user's move
-def move(board, i, char)
+def move(board, i, char = 'X')
   board[i] = char
   board
 end
