@@ -34,6 +34,7 @@ end
 # updates the board array with the value of the user's move
 def move(board, i, token)
   board[i] = token
+  board
 end
 
 # checks if the chosen position on the board is occupied
