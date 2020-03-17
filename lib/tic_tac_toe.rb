@@ -64,7 +64,7 @@ def turn(board)
   isvalid = valid_move?(board, index)
 
   if isvalid == true
-    move(board, index)
+    move(board, index, current_player(board))
     display_board(board)
   else
     puts "Sorry, invalid move :("
