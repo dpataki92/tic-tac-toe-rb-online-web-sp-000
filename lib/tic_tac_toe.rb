@@ -166,7 +166,7 @@ def play(board)
   until over?(board) == true
     turn(board)
   end
-  
+
   if over?(board) == true
     if won?(board) != nil
       winner_token = winner(board)
@@ -175,5 +175,5 @@ def play(board)
       puts "It is a draw. Another round?"
     end
   end
-  
+
 end
