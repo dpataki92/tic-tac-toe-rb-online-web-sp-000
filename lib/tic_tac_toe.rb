@@ -172,7 +172,7 @@ def play(board)
       winner_token = winner(board)
       puts "Congratulations #{winner_token}!"
     elsif draw?(board) == true
-      puts "It is a draw. Another round?"
+      puts "Cat's Game!"
     end
   end
 
