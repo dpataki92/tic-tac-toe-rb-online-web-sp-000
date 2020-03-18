@@ -162,6 +162,18 @@ end
 
 
 def play(board)
-  turn(board)
-  over?(board) == true ? "yes" : "no"
+
+  until over?(board) == true
+    turn(board)
+  end
+  
+  if over?(board) == true
+    if won?(board) != nil
+      winner_token = winner(board)
+      puts "Congratulations #{winner_token}! You are the winner!"
+    elsif draw?(board) == true
+      puts "It is a draw. Another round?"
+    end
+  end
+  
 end
