@@ -170,7 +170,7 @@ def play(board)
   if over?(board) == true
     if won?(board) != nil
       winner_token = winner(board)
-      puts "Congratulations #{winner_token}! You are the winner!"
+      puts "Congratulations #{winner_token}!"
     elsif draw?(board) == true
       puts "It is a draw. Another round?"
     end
